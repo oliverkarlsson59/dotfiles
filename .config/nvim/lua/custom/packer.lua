@@ -38,11 +38,15 @@ require('packer').startup(function()
 	use 'saadparwaiz1/cmp_luasnip'
 	use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
+	use 'simrat39/rust-tools.nvim'
+
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.x',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
+
 
 
 	--use 'navarasu/onedark.nvim'
