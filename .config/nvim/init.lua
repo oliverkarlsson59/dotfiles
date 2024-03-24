@@ -1,4 +1,4 @@
-require("custom")
+require("config")
 
 --Incremental live completion (note: this is now a default on master)
 vim.o.inccommand = 'nosplit'

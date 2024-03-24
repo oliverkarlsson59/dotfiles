@@ -29,7 +29,6 @@ require("lazy").setup(
             version = "^4", -- Recommended
             ft = {"rust"}
         },
-        {"catppuccin/nvim", name = "catppuccin", priority = 1000},
         {
             "hrsh7th/nvim-cmp",
             event = "InsertEnter",
@@ -57,6 +56,9 @@ require("lazy").setup(
                 }
             }
         },
+
+		{ "catppuccin/nvim", name = "catppuccin", priority = 1000},
+
         "neovim/nvim-lspconfig",
         require("mason").setup(),
         require("mason-lspconfig").setup(
