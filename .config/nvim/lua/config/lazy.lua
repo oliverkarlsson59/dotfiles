@@ -34,33 +34,7 @@ require("lazy").setup(
             version = "^4", -- Recommended
             ft = {"rust"}
         },
-        {
-            "hrsh7th/nvim-cmp",
-            event = "InsertEnter",
-            dependencies = {
-                {
-                    -- snippet plugin
-                    "L3MON4D3/LuaSnip",
-                    dependencies = "rafamadriz/friendly-snippets",
-                    opts = {history = true, updateevents = "TextChanged,TextChangedI"}
-                },
-                {
-                    "windwp/nvim-autopairs",
-                    opts = {
-                        fast_wrap = {},
-                        disable_filetype = {"TelescopePrompt", "vim"}
-                    }
-                },
-                -- cmp sources plugins
-                {
-                    "saadparwaiz1/cmp_luasnip",
-                    "hrsh7th/cmp-nvim-lua",
-                    "hrsh7th/cmp-nvim-lsp",
-                    "hrsh7th/cmp-buffer",
-                    "hrsh7th/cmp-path"
-                }
-            }
-        },
+        
 
 		
 
