@@ -10,3 +10,4 @@ vim.keymap.set(
 )
 
 vim.keymap.set("n", "<C-space>", function() vim.cmd.RustLsp{ 'hover', 'actions' } end, { silent = true, buffer = bufnr })
+
