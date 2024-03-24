@@ -15,6 +15,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
     {
+		{
+			import = "plugins"
+		},
+
+
         "nvim-lua/plenary.nvim",
         "nvim-telescope/telescope.nvim",
         "lukas-reineke/indent-blankline.nvim",
@@ -57,7 +62,7 @@ require("lazy").setup(
             }
         },
 
-		{ "catppuccin/nvim", name = "catppuccin", priority = 1000},
+		
 
         "neovim/nvim-lspconfig",
         require("mason").setup(),
@@ -77,5 +82,3 @@ require("lazy").setup(
     },
     {}
 )
-
-vim.cmd.colorscheme "catppuccin"
